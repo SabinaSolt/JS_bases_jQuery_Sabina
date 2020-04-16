@@ -6,11 +6,47 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
     <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <img src="rock.jpg" class="img-responsive" style="width:100%" alt="rock">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-body">
+                            <img src="paper.jpg" class="img-responsive" style="width:100%" alt="paper">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-body">
+                            <img src="scissors.jpg" class="img-responsive" style="width:100%" alt="scissors">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="container col-sm-6" id="userChoice">
+        <div>User's choice:</div>
+    </div>
+
+    <div class="container col-sm-6" id="computerChoice">
+        <div>Computer's choice:</div>
+    </div>
+    <div class="container col-sm-6" id="gameResult">
+        <div>Game result:</div>
     </div>
 </body>
 
