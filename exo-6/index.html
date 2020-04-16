@@ -6,11 +6,21 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container jumbotron">
+        <form class="form-inline col-sm-6">
+            <div>Se connecter:</div>
+            <input type="email" class="form-control col-sm-12" size="50" placeholder="Email Address">
+
+            <input type="password" class="form-control col-sm-12" size="50" placeholder="Password">
+
+            <button type="button" class="btn btn-danger col-sm-12">Sign In</button>
+        </form>
     </div>
 </body>
 
