@@ -13,11 +13,11 @@ $(document).ready(function(){
         }
         else
         {
-            let at=/@/;
+            let at=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
             let testMail=at.test(mail);
             if(!testMail) {
                 let $alert=$("<div>")
-                    .text("email must contain @ character")
+                    .text("email must be like blabla@toto.com")
                     .addClass("alert alert-warning col-sm-12")
                     .appendTo("form");
             }
