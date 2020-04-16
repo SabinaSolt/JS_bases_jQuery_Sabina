@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     let newImg=$("<img>");
     $(newImg).attr("src","https://img.etimg.com/thumb/msid-71705293,width-643,imgsize-408826,resizemode-4/basra-pearls.jpg");
-    $(newImg).css("height","250px");
+    $(newImg).height(250);
     $(newDiv).append(newImg);
 
     //etape 9
