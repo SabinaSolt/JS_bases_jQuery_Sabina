@@ -1,0 +1,101 @@
+
+head, body {
+    font-family: "Encode Sans Expanded";
+}
+
+
+ .hero_slogan h2 {
+     padding: 0;
+
+ }
+
+ .hero_slogan {
+     padding-top: 100px;
+ }
+
+ .laboxtable {
+     background: linear-gradient(#c40c23 , #8b202e );
+
+
+ }
+ .slogan_bordo {
+     color: #8d1028;
+
+     font-weight: bold;
+ }
+
+ .text_description {
+     font-size: 20px;
+     font-color: black;
+ }
+
+ .text_titles {
+    font-size:50px;
+     font-weight: bold;
+ }
+
+ .text_titles2 {
+     font-size:40px;
+     font-weight: bold;
+
+ }
+
+ .savoir_plus {
+     opacity: 90%;
+     font-weight: bold;
+     font-size: 20px;
+ }
+
+ .pitch {
+    background-color: white;
+}
+
+.pour_elle {
+    font-weight: bold;
+    transform: translate(50px,50px);
+}
+
+
+
+ @media (max-width:960px) {
+     #laboxmobile {
+         opacity: 100%;
+         background: #c40c23 ;
+        text-align:center;
+     }
+     #laboxdesktop {
+         opacity:0%;
+     }
+     .hero_slogan {
+         background-image:url("../pictures/yolom.jpg");
+         background-position: center bottom;
+         height:400px;
+
+     }
+
+ }
+ @media (min-width: 961px) {
+     #laboxmobile {
+         opacity: 0%;
+     }
+     #laboxdesktop {
+         opacity:100%;
+     }
+     .hero_slogan {
+         background-image:url("../pictures/yolo.jpg");
+         background-position: center bottom;
+         height:65vh;
+     }
+     .carousel-caption {
+         transform: translate(350px,5%);
+     }
+ }
+
+@media (max-width:540px) {
+    .hero_slogan {
+        background-image:url("../pictures/yolos.jpg");
+        background-position: center bottom;
+        height:200px;
+
+    }
+}

@@ -3,15 +3,122 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<!--//plugin for carousel-->
+    <link rel="stylesheet" href="../../slick-master/slick/slick.css">
+    <link rel="stylesheet" href="../../slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="../../slick-master/slick/slick.js"></script>
+
+
     <script src="script.js"></script>
+
 </head>
 
 <body>
-    <div class="container">
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Bac à sable</h1>
+            <p>Tester les plugins jQuery</p>
+        </div>
     </div>
+    <div id="tabs">
+        <ul>
+            <li><a href="#chipolata">Chipolata</a></li>
+            <li><a href="#merguez">Merguez</a></li>
+            <li><a href="#diot">Diot</a></li>
+        </ul>
+
+
+<!--    <div class="container" id="saucisses">-->
+        <div id="chipolata">
+            <h3 >Chipolata</h3>
+            <p>Une chipolata (ou, par apocope, « chipo ») est une saucisse longue
+                et fine dont le diamètre idéal se situe entre 2 et 2,5 cm.
+
+                En France, les commerçants ont dévoyé l'appellation en la consacrant
+                à des saucisses à base de chair à saucisse de porc moyennement hachée,
+                embossée dans un boyau naturel. L'assaisonnement peut contenir notamment du thym,
+                de la sauge ou de la noix de muscade. Poêlée ou grillée
+                afin que la graisse s'échappe à la cuisson, la chipolata n'est pas fumée.
+
+                Elle est parfois confondue avec le godiveau
+                qui est une saucisse à base de veau haché
+                et de graisse de rognons que l'on trouve particulièrement
+                dans la région arpitane</p>
+        </div>
+        <div id="merguez">
+            <h3 >Merguez</h3>
+            <p>La merguez est une petite saucisse rouge épicée du Maghreb,
+                d'environ deux centimètres de diamètre, à base d'un hachis
+                de viande introduit dans de l'intestin grêle de mouton.
+                La viande peut être de la viande de bœuf et/ou de mouton</p>
+        </div>
+        <div id="diot">
+            <h3>Diot</h3>
+            <p>Un diot (prononcé [djo] ; en savoyard : Diot [ˈɟo]) est une
+                saucisse savoyarde traditionnelle de la cuisine savoyarde.
+                Déclinée de divers façon : nature, pur porc, fumé, aux choux,
+                au beaufort, elle est généralement cuisinée avec des oignons
+                et du vin du vignoble de Savoie, et servie avec des tartifles
+                (pomme de terre, en savoyard).</p>
+        </div>
+
+    </div>
+<!--    </div>-->
+
+    <div class="container jumbotron">
+        <label for="datepicker">Choisir la date</label>
+        <input type="text" id="datepicker">
+    </div>
+
+    <div class="container jumbotron">
+        <div id="carousel" class="carousel slide container" data-ride="carousel">
+<!--            <ol class="carousel-indicators">-->
+<!--                <li data-target="#carousel" data-slide-to="0" class="active"></li>-->
+<!--                <li data-target="#carousel" data-slide-to="1"></li>-->
+<!--                <li data-target="#carousel" data-slide-to="2"></li>-->
+<!--                <li data-target="#carousel" data-slide-to="3"></li>-->
+<!--            </ol>-->
+<!--            <div class="carousel-inner d-flex">-->
+                <div id="slide1" class="carousel-item active">
+                        <img class="d-block w-100" src="cochon.jpg" alt="cochon">
+                    <div class="title"><p>Cochon</p></div>
+                </div>
+                <div id="slide2" class="carousel-item ">
+                        <img class="d-block w-100" src="mouton.jpg" alt="mouton">
+                    <div class="title"><p>Mouton</p></div>
+                </div>
+                <div id="slide3" class="carousel-item">
+                        <img class="d-block w-100" src="veau.jpg" alt="veau">
+                    <div class="title"><p>Steak</p></div>
+                </div>
+                <div id="slide4" class="carousel-item">
+                        <img class="d-block w-100" src="kebab.jpg" alt="kebab">
+                    <div class="title"><p>Kebab</p></div>
+                </div>
+<!--            </div>-->
+<!--            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">-->
+<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                <span class="sr-only">Previous</span>-->
+<!--            </a>-->
+<!--            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">-->
+<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                <span class="sr-only">Next</span>-->
+<!--            </a>-->
+        </div>
+    </div>
+
+
 </body>
 
 </html>
