@@ -1,4 +1,6 @@
-console.log('exercice 2');
+console.log('----------');
+console.log('Exercice 2');
+console.log('----------');
 
 // Sélectionner le titre du blog : "John's Blog".
 $("#title");

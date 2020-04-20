@@ -1,3 +1,6 @@
+console.log('----------');
+console.log('Exercice 3');
+console.log('----------');
 console.log("exercice 3");
 $(document).ready(function(){
 
@@ -37,3 +40,7 @@ $(document).ready(function(){
     //etape 9
     $("footer").addClass("intro");
 });
+
+// Faites toutes vos manipulations de DOM ici
+
+// Et pas dans votre fichier HTML !

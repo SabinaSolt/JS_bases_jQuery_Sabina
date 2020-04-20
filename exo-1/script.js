@@ -1,3 +1,8 @@
+console.log('----------');
+console.log('Exercice 1');
+console.log('----------');
+
+
 console.log('exercice 1');
 //jQuery est une librairie qui permet d'écrire le code plus concis comparé au JavaScript.
 // La différence consiste aussi dans le fait que JavaScript manipule les noeuds du DOM,
