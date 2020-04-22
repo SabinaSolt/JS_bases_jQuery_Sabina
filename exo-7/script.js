@@ -1,10 +1,41 @@
 console.log("exercice 7");
 $(document).ready(function () {
-    // function getData() {
-    //     return data; // data is defined in DATA.js file
-    // }
 
     data.forEach(addLineToTable);
+
+    // $("#tableau1").pagination({
+    //     items:1000,
+    //     itemsOnPage:50,
+    //
+    // });
+
+    var item_per_page=50;
+    var $block=jQuery('.row');
+    var block_count=$block.length;
+    var number_of_pages=Math.ceil(block_count/item_per_page);
+
+    //append pagination in body
+    jQuery('body').append("<div class='pagination'></div>");
+    for(var i=1; i<=number_of_pages; i++){
+        jQuery('.pagination').append("<div class='page'>"+i+"</div>");
+    }
+
+    //activate first page
+    jQuery(".page:first-child").addClass('active');
+    jQuery('.row').filter(function( index ) { return index < item_per_page;}).addClass('active');
+
+    //activate pagination on click
+    jQuery('body').delegate('.page','click',function(){
+        var page_index=jQuery(this).index();
+        var start=page_index*item_per_page;
+        $block.removeClass('active');
+        jQuery(".page").removeClass('active');
+        jQuery(".page").eq(page_index).addClass('active');
+        for(var j=0;j<item_per_page;j++){
+            $block.eq(start+j).addClass('active');
+        }
+
+    });
 
     function addLineToTable(userObj) {
           //ajoute le row dans le tableau
@@ -96,7 +127,7 @@ $(document).ready(function () {
         //ajoute les cellules
         let $cellule1 = $("<td>")
             .addClass("col-lg-4 ")
-            .text($('#email').val())
+            .text($('#emailform').val())
             .appendTo($row);
 
         let $cellule2 = $("<td>")
